@@ -8,7 +8,7 @@ const WebsiteLayout: React.FC = () => {
 	return (
 		<>
 			<WebsiteHeader />
-			<main>
+			<main className="max-w-6xl mx-auto min-h-[80vh]">
 				<Outlet />
 			</main>
 			<WebsiteFooter />
