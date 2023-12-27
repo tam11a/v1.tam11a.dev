@@ -7,11 +7,13 @@ const WebsiteFooter = lazy(() => import("./Footer"));
 const WebsiteLayout: React.FC = () => {
 	return (
 		<>
-			<WebsiteHeader />
-			<main className="max-w-6xl mx-auto min-h-[80vh]">
-				<Outlet />
-			</main>
-			<WebsiteFooter />
+			<section className="bg-[url(/grid.svg)] bg-repeat-y bg-cover">
+				<WebsiteHeader />
+				<main className="max-w-6xl mx-auto min-h-[80vh]">
+					<Outlet />
+				</main>
+				<WebsiteFooter />
+			</section>
 		</>
 	);
 };
