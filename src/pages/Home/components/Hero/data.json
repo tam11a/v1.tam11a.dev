@@ -15,5 +15,12 @@
 			"name": "Dribbble",
 			"url": "https://dribbble.com/tam11a"
 		}
+	],
+	"companies": [
+		"companies/reserveit.svg",
+		"companies/pnd.svg",
+		"companies/fascino.svg",
+		"companies/rayos.svg",
+		"companies/planetx.svg"
 	]
 }

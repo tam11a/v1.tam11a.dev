@@ -2,12 +2,10 @@ import React from "react";
 import data from "./data.json";
 import { Link } from "react-router-dom";
 
-console.log(data);
-
 const Hero: React.FC = () => {
 	return (
 		<>
-			<div className="px-2 flex flex-col items-center text-center justify-center gap-6 min-h-[85vh]">
+			<div className="px-2 flex flex-col items-center text-center justify-center gap-6 min-h-[80vh]">
 				<div className="p-2 rounded-full border-4 border-primary-500 w-fit h-fit">
 					<img
 						src="/tam.jpg"
@@ -36,6 +34,16 @@ const Hero: React.FC = () => {
 						</React.Fragment>
 					))}
 				</div>
+			</div>
+			<div className="mix-blend-luminosity flex flex-row flex-wrap items-center justify-evenly gap-7 px-2">
+				{data?.companies?.map((company, index) => (
+					<div key={index}>
+						<img
+							src={company}
+							className="h-16"
+						/>
+					</div>
+				))}
 			</div>
 		</>
 	);
