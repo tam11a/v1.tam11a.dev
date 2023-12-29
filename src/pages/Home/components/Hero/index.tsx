@@ -10,24 +10,24 @@ const Hero: React.FC = () => {
 				<motion.div
 					className="overflow-hidden p-2 rounded-full border-4 border-primary-500 w-fit h-fit"
 					initial={{
-						scaleY: 0.5,
+						scale: 0.5,
 					}}
 					animate={{
-						y: [0, 5, -5, 0],
-						scaleY: 1,
+						// y: [0, 5, -5, 0],
+						scale: 1,
 					}}
-					transition={{ duration: 0.7 }}
+					transition={{ type: "spring", stiffness: 100 }}
 				>
 					<motion.img
 						src="/tam.jpg"
 						className="max-w-[220px] w-[95vw] rounded-full"
-						initial={{
-							scaleY: 0.5,
-						}}
-						animate={{
-							scaleY: 1,
-						}}
-						transition={{ duration: 0.5 }}
+						// initial={{
+						// 	scaleY: 0.5,
+						// }}
+						// animate={{
+						// 	scaleY: 1,
+						// }}
+						// transition={{ duration: 0.5 }}
 					/>
 				</motion.div>
 				<h1 className="text-2xl mt-8">
