@@ -70,9 +70,12 @@ const Card: React.FC<{ job: CardType; rtl?: boolean }> = ({
 									({position.location_type})
 								</span>
 							</h3>
-							<time className="mb-1 text-sm font-medium leading-none text-slate-400">
-								{position.start_date} - {position.end_date} &bull;{" "}
+							<p className="my-1 text-sm font-bold tracking-wider leading-none text-primary">
 								{position.job_type}
+							</p>
+							<time className="text-sm font-medium leading-none text-slate-400">
+								{position.start_date} - {position.end_date} &bull;{" "}
+								{position.duration}
 							</time>
 						</li>
 					);
