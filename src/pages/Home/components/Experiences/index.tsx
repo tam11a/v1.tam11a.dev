@@ -1,21 +1,22 @@
 import React from "react";
 import data from "./data.json";
-import Card from "./components/Card";
+import Card, { CardType } from "./components/Card";
 
 const Experiences: React.FC = () => {
 	return (
-		<div>
-			{data?.jobs?.map((job, index) => {
+		<div className="relative">
+			{data?.jobs?.map((job: CardType, index: number) => {
 				return (
 					<div
 						key={index}
 						className={`
-                        flex flex-col md:${
-													!(index % 2) ? "flex-row-reverse" : "flex-row"
-												} items-start justify-evenly  max-w-5xl mx-auto px-3 gap-7 my-20
-                    `}
+						relative flex flex-col md:flex-row items-start justify-evenly  max-w-5xl mx-auto px-3 gap-7 my-16
+					`}
 					>
-						<Card job={job} />
+						<Card
+							job={job}
+							rtl={!(index % 2)}
+						/>
 					</div>
 				);
 			})}
