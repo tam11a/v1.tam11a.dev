@@ -46,7 +46,34 @@ const Card: React.FC<{ job: CardType }> = ({ job }) => {
 				<h4 className="font-semibold text-slate-400 text-sm">
 					{job.company_location}
 				</h4>
-				<p className="text-justify text-sm mt-2">{job.description}</p>
+				<p className="text-justify text-sm mt-2 mb-6">{job.description}</p>
+				<ol
+					className={`relative ${
+						job.positions.length > 1 ? "border-s border-slate-400" : ""
+					}
+				}`}
+				>
+					{job.positions.map((position: Position, index: number) => {
+						return (
+							<li
+								className="mb-7 ms-4"
+								key={index}
+							>
+								<div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 border border-black -start-1.5"></div>
+								<h3 className="font-semibold text-lg">
+									{position.title}{" "}
+									<span className="text-primary">
+										({position.location_type})
+									</span>
+								</h3>
+								<time className="mb-1 text-sm font-medium leading-none text-slate-400">
+									{position.start_date} - {position.end_date} &bull;{" "}
+									{position.job_type}
+								</time>
+							</li>
+						);
+					})}
+				</ol>
 			</div>
 		</>
 	);
