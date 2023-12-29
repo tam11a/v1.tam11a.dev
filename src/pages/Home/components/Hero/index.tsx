@@ -2,12 +2,14 @@ import React from "react";
 import data from "./data.json";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+// import { useAnimate, stagger } from "framer-motion";
 
 const Hero: React.FC = () => {
 	return (
 		<>
 			<div className="px-2 flex flex-col items-center text-center justify-center gap-6 min-h-[80vh]">
 				<motion.div
+					layout
 					className="overflow-hidden p-2 rounded-full border-4 border-primary-500 w-fit h-fit"
 					initial={{
 						scale: 0.5,
