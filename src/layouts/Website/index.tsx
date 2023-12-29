@@ -9,7 +9,7 @@ const WebsiteLayout: React.FC = () => {
 		<>
 			<section className="bg-[url(/grid.svg)] bg-repeat-y bg-cover">
 				<WebsiteHeader />
-				<main className="max-w-6xl mx-auto min-h-[80vh]">
+				<main className="max-w-6xl mx-auto min-h-[95vh]">
 					<Outlet />
 				</main>
 				<WebsiteFooter />
