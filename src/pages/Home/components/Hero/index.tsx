@@ -5,31 +5,28 @@ import { motion } from "framer-motion";
 // import { useAnimate, stagger } from "framer-motion";
 
 const Hero: React.FC = () => {
+	const [dpLoading, setDpLoading] = React.useState(true);
+
 	return (
 		<>
 			<div className="px-2 flex flex-col items-center text-center justify-center gap-6 min-h-[80vh]">
 				<motion.div
 					layout
 					className="overflow-hidden p-2 rounded-full border-4 border-primary-500 w-fit h-fit"
-					initial={{
-						scale: 0.5,
-					}}
-					animate={{
-						y: [0, 5, -5, 0],
-						scale: 1,
-					}}
-					transition={{ type: "spring", stiffness: 200, when: "afterChildren" }}
 				>
 					<motion.img
 						src="/tam.jpg"
 						className="max-w-[220px] w-[95vw] rounded-full"
 						initial={{
-							scale: 0.5,
+							// scale: 0.5,
+							height: "10px",
 						}}
 						animate={{
-							scale: 1,
+							// scale: 1,
+							height: dpLoading ? "10px" : "auto",
 						}}
-						transition={{ type: "spring", stiffness: 200 }}
+						onLoad={() => setDpLoading(false)}
+						transition={{ type: "spring", stiffness: 50, when: "" }}
 					/>
 				</motion.div>
 				<h1 className="text-2xl mt-8">
