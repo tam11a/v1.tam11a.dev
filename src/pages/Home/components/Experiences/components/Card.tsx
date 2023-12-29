@@ -62,7 +62,7 @@ const Card: React.FC<{ job: CardType }> = ({ job }) => {
 								<div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 border border-black -start-1.5"></div>
 								<h3 className="font-semibold text-lg">
 									{position.title}{" "}
-									<span className="text-primary">
+									<span className="text-primary-400 font-extrabold">
 										({position.location_type})
 									</span>
 								</h3>
