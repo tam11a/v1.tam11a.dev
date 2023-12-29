@@ -62,6 +62,17 @@ const Hero: React.FC = () => {
 					</div>
 				))}
 			</div>
+			<div className="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto px-2 my-20 gap-14">
+				<p className="max-w-md text-xl md:text-2xl font-semibold text-center md:text-left">
+					Collaborate with brands & agencies to create impactful result.
+				</p>
+				<Link
+					to={`mailto:${data.email}`}
+					className="px-10 py-3 bg-primary bg-opacity-10 rounded-full border-2 border-primary text-primary font-extrabold tracking-widest"
+				>
+					EMAIL ME
+				</Link>
+			</div>
 		</>
 	);
 };
