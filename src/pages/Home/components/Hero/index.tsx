@@ -13,21 +13,21 @@ const Hero: React.FC = () => {
 						scale: 0.5,
 					}}
 					animate={{
-						// y: [0, 5, -5, 0],
+						y: [0, 5, -5, 0],
 						scale: 1,
 					}}
-					transition={{ type: "spring", stiffness: 100 }}
+					transition={{ type: "spring", stiffness: 200, when: "afterChildren" }}
 				>
 					<motion.img
 						src="/tam.jpg"
 						className="max-w-[220px] w-[95vw] rounded-full"
-						// initial={{
-						// 	scaleY: 0.5,
-						// }}
-						// animate={{
-						// 	scaleY: 1,
-						// }}
-						// transition={{ duration: 0.5 }}
+						initial={{
+							scale: 0.5,
+						}}
+						animate={{
+							scale: 1,
+						}}
+						transition={{ type: "spring", stiffness: 200 }}
 					/>
 				</motion.div>
 				<h1 className="text-2xl mt-8">
