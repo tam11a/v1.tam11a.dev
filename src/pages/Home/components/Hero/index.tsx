@@ -1,17 +1,35 @@
 import React from "react";
 import data from "./data.json";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
 	return (
 		<>
 			<div className="px-2 flex flex-col items-center text-center justify-center gap-6 min-h-[80vh]">
-				<div className="p-2 rounded-full border-4 border-primary-500 w-fit h-fit">
-					<img
+				<motion.div
+					className="overflow-hidden p-2 rounded-full border-4 border-primary-500 w-fit h-fit"
+					initial={{
+						scaleY: 0.5,
+					}}
+					animate={{
+						y: [0, 5, -5, 0],
+						scaleY: 1,
+					}}
+					transition={{ duration: 0.7 }}
+				>
+					<motion.img
 						src="/tam.jpg"
 						className="max-w-[220px] w-[95vw] rounded-full"
+						initial={{
+							scaleY: 0.5,
+						}}
+						animate={{
+							scaleY: 1,
+						}}
+						transition={{ duration: 0.5 }}
 					/>
-				</div>
+				</motion.div>
 				<h1 className="text-2xl mt-8">
 					Hi, I'm <span className="font-bold text-primary">{data.name}</span>
 				</h1>
