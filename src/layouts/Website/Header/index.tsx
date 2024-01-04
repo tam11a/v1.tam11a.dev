@@ -55,12 +55,12 @@ const WebsiteHeader: React.FC = () => {
 	// const navigate = useNavigate();
 	return (
 		<>
-			<header className="max-w-6xl mx-auto px-9 py-6 flex flex-row items-center justify-between">
+			<header className="max-w-6xl mx-auto px-9 py-6 flex-row items-center justify-between hidden">
 				<h1 className="text-3xl font-extrabold">
 					T<span className="text-primary">.</span>
 				</h1>
 				<nav>
-					<button className="text-primary-500 hover:text-primary-600 transition-colors duration-300 font-extrabold text-lg tracking-widest uppercase">
+					<button className=" text-primary-500 hover:text-primary-600 transition-colors duration-300 font-extrabold text-lg tracking-widest uppercase">
 						Menu
 					</button>
 				</nav>

@@ -29,6 +29,26 @@
 			}
 		},
 		{
+			"company": "Rayos Bangladesh",
+			"company_url": "https://rayosbd.com/",
+			"company_location": "Dhaka, Bangladesh.",
+			"description": "Rayos, a multi-vendor marketplace, offers more than 20 categories of products, including health and beauty, cosmetics, electronics and etc. Rayos BD is dedicated to Change Experience via superior customer support and fulfillment, ensuring that consumers in every part of Bangladesh receive hassle-free product delivery.",
+			"positions": [
+				{
+					"title": "Lead Software Engineer",
+					"start_date": "Aug 2022",
+					"end_date": "Dec 2022",
+					"duration": "5 mos",
+					"location_type": "Remote",
+					"job_type": "Contract"
+				}
+			],
+			"showcase": {
+				"image": "/tasks/rayosbd.png",
+				"url": "https://rayosbd.com/"
+			}
+		},
+		{
 			"company": "Brogrammers Lab",
 			"company_url": "https://brogrammerslab.com/",
 			"company_location": "Dhanmondi, Dhaka, Bangladesh.",
@@ -46,6 +66,26 @@
 			"showcase": {
 				"image": "/tasks/pnd.jpeg",
 				"url": "https://pndservicebd.com/"
+			}
+		},
+		{
+			"company": "Planet X Inc",
+			"company_url": "https://planetxinc.xyz/",
+			"company_location": "Gulshan, Dhaka, Bangladesh.",
+			"description": "Planet X Inc is a complete solutions provider that provides technology-integrated end-to-end impact-oriented and data-driven organizational solutions. Taking a needs-based approach, the company designs the technology that augments business and organizational performances. Having provided solutions to various organizations, it has recently started expanding its reach by designing technological solutions to address community societal issues.",
+			"positions": [
+				{
+					"title": "Junior Full Stack Engineer",
+					"start_date": "Mar 2021",
+					"end_date": "Sept 2021",
+					"duration": "7 mos",
+					"location_type": "On-site",
+					"job_type": "Full-time"
+				}
+			],
+			"showcase": {
+				"image": "/tasks/planetx.png",
+				"url": "https://tam11a.github.io/planetxinc"
 			}
 		}
 	]
